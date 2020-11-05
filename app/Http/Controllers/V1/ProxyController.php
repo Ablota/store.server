@@ -52,6 +52,9 @@ class ProxyController extends Controller {
 				[
 					RequestOptions::READ_TIMEOUT => 90,
 					RequestOptions::TIMEOUT => 90,
+					RequestOptions::HEADERS => [
+						'User-Agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36',
+					],
 				]
 			);
 
